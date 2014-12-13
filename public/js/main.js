@@ -57,6 +57,9 @@ window.onload = function()
   function handleFileSelect(evt) {
     files = evt.target.files; // FileList object
     listdom = document.getElementById('list');
+    while (listdom.firstChild) {
+      listdom.removeChild(listdom.firstChild);
+    }
     for (var i = 0; i < files.length; ++i) {
       li = document.createElement("li");
       li.setAttribute("class", "alert");
