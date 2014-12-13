@@ -84,7 +84,8 @@ window.onload = function()
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
   play = document.getElementById('play');
   play.onclick = function () {
-    play.disabled = true;
+    // TODO
+    //play.disabled = true;
     if (playing == true) {
       return false;
     }
