@@ -93,7 +93,7 @@ window.onload = function()
       return false;
     }
     startOffset = 0;
-    fileindex = Math.floor(Math.random() * (files.length - 1) + 1);
+    fileindex = Math.floor(Math.random() * (files.length - 1));
     f = files[fileindex];
     pauses = document.getElementById('pauses').checked;
     playFile(f, pauses);
