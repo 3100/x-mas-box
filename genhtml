@@ -1,1 +1,0 @@
-slimrb index.slim -p --option format=:html  > index.html
