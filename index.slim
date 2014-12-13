@@ -1,14 +1,26 @@
 doctype html
 html
   head
-    title プレゼント交換
+    title X('mas)BOX - Music Player for Gift Exchange
     meta charset="utf-8"
+    link rel="stylesheet" type="text/css"  href="css/gumby-xmas.css"
+    link rel="stylesheet" type="text/css"  href="css/style.css"
     script type="text/javascript" src="js/main.js"
 
-  body
-    h1 プレゼント交換用音楽プレイヤー
-
-    input#files type="file" name="file[]" multiple=true
-    input#play type="button" value="play"
-
-    p#playing
+  body.bg
+    div.row
+      h1 X('mas)BOX
+      p A Music Player for Gift Exchange Game
+      div.xlarge.primary.btn
+        a href="#" onclick="document.getElementById('files').click()" Select Musics
+      div.xlarge.primary.btn
+        a href="#" onclick="document.getElementById('play').click()" Play
+      label.checkbox.checked for="pauses"
+        input name="checkbox" id="pauses" value="1" type="checkbox"
+        span
+        | with fake
+      input#files.hidden type="file" name="file[]" multiple=true
+      input#play.hidden type="button" value="play"
+      hr
+      ul#list
+      p.footer.small This site is only available with Google Chrome.
